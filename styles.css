@@ -60,4 +60,5 @@ nav a.active {
 
 #menu-icon {
   font-size: 4rem;
+  display: none;
 }
