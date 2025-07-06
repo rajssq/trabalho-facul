@@ -1,59 +1,152 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raissa</title>
-    <!-- icons -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="styles.css" />
+
+    <title>Portfolio</title>
   </head>
   <body>
-    <!--header-->
-    <header>
-      <a href="#" class="logo">Raissa.</a>
-      <i class="bx bx-menu" id="menu-icon"></i>
-      <nav>
-        <a href="#" class="active">Home</a>
-        <a href="#">Resume</a>
-        <a href="#">Projects</a>
-        <a href="#">Certificates</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="left">
+        <a href="/">Raissa.</a>
+      </div>
 
-    <!--home section-->
-    <section class="home">
+      <div class="right">
+        <a
+          href="https://github.com/rajssq"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
 
-        <!--text and btn-->
-      <div class="home-detail">
-        <h1>Raissa Nazaré</h1>
-        <h2>Full-Stack
-        <span style="--i:4;" data-text="Developer">Developer</span>
-        </h2>
-        <p>Olá, me chamo Raissa e sou uma desenvolvedora Full-Stack.</p>
-        <div class="btn-sci">
-          <a href="#" class="btn">Download CV</a>
-          <div class="sci">
-            <a href="https://github.com/rajssq" target="_blank"><i class="bx bxl-github"></i></a>
-            <a href="https://www.linkedin.com/in/raissanazar%C3%A9/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        <a
+          href="https://www.linkedin.com/in/raissanazar%C3%A9/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
+
+        <a href="mailto:rajssqdev@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- SECTION 1: Hero -->
+      <section class="hero-section">
+        <div class="text">
+          <h2>Olá! Me chamo Raissa</h2>
+          <h3>FullStack Developer</h3>
+          <p>
+            Atuo como desenvolvedora front-end. Tenho foco em desenvolvimento
+            full-stack, com experiência prática em projetos reais e domínio de
+            tecnologias como HTML, CSS, JavaScript, TypeScript, React e Node.js.
+            Busco constantemente aprimorar minhas habilidades e expandir meus
+            conhecimentos em toda a stack de desenvolvimento.
+          </p>
+
+          <div class="links">
+            <a href="#skills">
+              <i class="fa-solid fa-code"></i>
+              <span>Skills</span>
+            </a>
+
+            <a href="#testimony">
+              <i class="fa-solid fa-pen"></i>
+              <span>Certificates</span>
+            </a>
           </div>
         </div>
-      </div>
-        <!--image-->
-      <div class="home-img">
-        <div class="img-box">
-            <div class="img-item">
-                <img src="./assets/minhafoto.jpeg" alt="Raissa Nazaré" />
-            </div>
-        </div>
-      </div>
 
-      </div>
-    </section>
-    <script src="script.js"></script>
+        <div class="headshot">
+          <img src="./assets/minhafoto.jpeg" alt="Foto Raissa" />
+        </div>
+      </section>
+
+      <!-- SECTION 2: Skills -->
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="text">
+          Experiência no desenvolvimento de interfaces responsivas e funcionais,
+          utilizando boas práticas de semântica, componentização e
+          reaproveitamento de código. Familiaridade com consumo de APIs,
+          manipulação de estados e estilização com pré-processadores e
+          frameworks modernos.
+        </div>
+
+        <div class="cells">
+          <div class="cell">
+            <img src="./assets/html-logo.webp" alt="html logo" />
+            <span>HTML</span>
+          </div>
+
+          <div class="cell">
+            <img src="./assets/css-logo.webp" alt="css logo" />
+            <span>CSS</span>
+          </div>
+
+          <div class="cell">
+            <img src="./assets/javascript-logo.webp" alt="javascript logo" />
+            <span>JavaScript</span>
+          </div>
+
+          <div class="cell">
+            <img src="./assets/node-logo.webp" alt="node logo" />
+            <span>Node.js</span>
+          </div>
+
+          <div class="cell">
+            <img src="./assets/react-logo.webp" alt="react logo" />
+            <span>React.js</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: Certificates -->
+      <section id="testimony" class="testimony-section">
+        <h2>Certificates</h2>
+
+        <div class="group">
+          <div class="person-details">
+            <img src="./assets/github-foundations (1).png" />
+            <p>GitHub Foundations</p>
+          </div>
+
+          <div class="text">
+            Curso introdutório com foco nos principais conceitos de Git e
+            GitHub. Desenvolvi habilidades práticas em controle de versão,
+            criação e gerenciamento de repositórios, branches, commits e pull
+            requests. Aprimorei também o uso do GitHub em fluxos de trabalho
+            colaborativos no desenvolvimento de software.
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
